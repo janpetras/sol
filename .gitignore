@@ -4,14 +4,7 @@
 .bower-*/
 .idea/
 node_modules/
-public/system/lib/angular
-public/system/lib/angular-bootstrap
-public/system/lib/angular-cookies
-public/system/lib/angular-mocks
-public/system/lib/angular-resource
-public/system/lib/angular-route
-public/system/lib/angular-ui-router
-public/system/lib/jquery
+public/system/lib
 mean.iml
 test/coverage/
 modules/public/
