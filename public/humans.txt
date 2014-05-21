@@ -3,13 +3,18 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Ioan Petras -- Lead Developer -- @janpetras21
 
 # THANKS
 
-    <name>
+    Mean.io
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    JavaScrjpt, Mocha
+    Angular.js, Karma
+    Express.js, Node.js
+    MongoDB, HTML
+    CSS, PHP
