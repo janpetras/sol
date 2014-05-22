@@ -2,6 +2,7 @@
 
 // Utilize Lo-Dash utility library
 var _ = require('lodash'),
+	Crawler = require('simplecrawler'),
     fs = require('fs');
 
 // Load configurations

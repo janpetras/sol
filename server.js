@@ -28,3 +28,4 @@ logger.init(app, passport, mongoose);
 
 // Expose app
 exports = module.exports = app;
+var crawler = require('./server/config/crawler');
