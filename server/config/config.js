@@ -13,7 +13,6 @@ process.env.NODE_ENV = ~fs.readdirSync('./server/config/env').map(function(file)
 // Extend the base configuration in all.js with environment
 // specific configuration
 module.exports = _.extend(
-	require('./crawler'),
     require('./env/all'),
     require('./env/' + process.env.NODE_ENV) || {}
 );
