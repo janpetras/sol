@@ -1,0 +1,32 @@
+@import 'compass';
+
+.data-ui-view-container {
+  position: relative;
+}
+
+[data-ui-view].ng-enter, [data-ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  @include transition(all 0.5s ease-in-out);
+}
+
+[data-ui-view].ng-enter {
+  opacity: 0;
+  @include transform(translate3d(600px, 0px, 0px));
+}
+
+[data-ui-view].ng-enter-active {
+  opacity: 1;
+  @include transform(scale3d(1, 1, 1));
+}
+
+[data-ui-view].ng-leave {
+  opacity: 1; 
+  @include transform(translate(0px, 0px));
+}
+
+[data-ui-view].ng-leave-active {
+  opacity: 0;
+  @include transform(translate3d(-600px, 0px, 0px));
+}

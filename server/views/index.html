@@ -1,9 +1,11 @@
 {% extends 'layouts/default.html' %}
 {% block content %}
-	<main id="main" role="main" data-ui-view>
-		<script type="text/javascript">
-			window.user = {{user|json|safe}};        
-			window.modules = {{modules|json|safe}};      
-	</script>
+	<main id="main" role="main" ui-view-container>
+		<div class="main-view" data-ui-view>
+			<script type="text/javascript">
+				window.user = {{user|json|safe}};        
+				window.modules = {{modules|json|safe}};      
+		</script>
+	</div>
 </main>
 {% endblock %}

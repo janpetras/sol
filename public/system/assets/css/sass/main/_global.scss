@@ -10,6 +10,7 @@ html {
 body {
 	font-size: 16px;
 	font-family: $roboto;
+	overflow: hidden;
 }
 
 .page-header {
@@ -52,9 +53,9 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 1.875rem;
+  height: 1.2rem;
   width: 100%;
-  background: $lgrey;
+  background: $cream;
   -webkit-box-shadow: 0 8px 6px 6px black;
   -moz-box-shadow: 0 8px 6px 6px black;
   box-shadow: 0 8px 6px 6px black;
