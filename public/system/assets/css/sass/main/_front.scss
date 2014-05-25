@@ -1,0 +1,26 @@
+.main-search-input {
+	height: 2.75rem;
+	border-radius: 0;
+}
+
+.main-search-button {
+	padding: 0.7rem 2.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	border: 0;
+	background-color: $cream;
+	&:focus, &:hover, &:active {
+		background-color: $red;
+		color: white !important;
+		outline: 0 !important;
+		border: 0;
+	}
+}
+
+.logo-container {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	img {
+		width: 30%;
+	}
+}

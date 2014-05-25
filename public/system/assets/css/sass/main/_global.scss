@@ -1,23 +1,21 @@
-// Fonts
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic);
-$roboto: 'Roboto', sans-serif !important;
+$roboto: 'Roboto', sans-serif;
 
 // Colors
-$red: #CC092F; $lgrey: #ddd; $dgray: #919693; $cream: #DED5B3; $lblue: #1A4663; $dblue: #003050;
+$red: #CC092F; $lgrey: #ddd; $dgray: #919693; $cream: #DED5B3; $lblue: #1A4663; $dblue: #003050; $lblue-trans: rgba(0, 100, 200, 0.1);
 
 html {
-	font-size: 100% !important;
+	font-size: 100%;
 }
 
 body {
-	font-size: 16px !important;
+	font-size: 16px;
 	font-family: $roboto;
 }
 
 .page-header {
- 	padding-bottom: 0 !important;
- 	margin: 0 !important;
- 	border-bottom: 0 !important;
+ 	padding-bottom: 0;
+ 	margin: 0;
+ 	border-bottom: 0;
 }
 
 .page-header .navbar-nav {
@@ -67,49 +65,54 @@ footer p {
 }
 
 .navbar {
-  margin-bottom: 0 !important;
-  border-radius: 0 !important;
-  border: 0 !important;
-  background-color: $cream !important;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: 0;
+  background-color: $cream;
 }
 
-.navbar-nav {
+.navbar-inverse .navbar-nav {
 	li > a {
-	color: $lblue !important;
+	color: $lblue;
 	}
 	li > a:hover {
-		color: $red !important;
+		background-color: $red;
+		color: white;
 	}
 }
 
-.main-search-input {
-	height: 2.75rem !important;
-}
-
-.main-search-button {
-	padding: 0.625rem 2.5rem !important;
-	font-size: 1rem !important;
-}
-
-.navbar-brand {
-	color: $lblue !important;
-	font-size: 30px !important;
-	font-weight: 500 !important;
+.navbar-inverse .navbar-brand {
+	color: $lblue;
+	font-size: 30px;
+	font-weight: 500;
 	&:hover { 
-		color: $red !important;
+		color: $red;
 	}
 }
 
-.form-control.main-search-input:focus {
-	border-color: $cream;
-	outline: 0;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.080), 0 0 9px rgba(222, 213, 179, 0.7);
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.080), 0 0 9px rgba(222, 213, 179, 0.7);
+.form-control:focus {
+	border: 2px solid $cream;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(222, 213, 179, 1);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(222, 213, 179, 1);
+}
+
+.form-control:hover {
+	border: 2px solid $cream;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(222, 213, 179, 1);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(222, 213, 179, 1);
 }
 
 h1, h2, h3, h4, h5, h6, p, span {
-	color: $lblue !important;
+	color: $lblue;
 	.btn-default {
-		color: $lblue !important;
+		color: $lblue;
+		border-radius: 0;
+		&:hover {
+			color: $red;
+		}
 	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 10px;
 }
