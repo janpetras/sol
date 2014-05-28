@@ -3,6 +3,10 @@
 	<div class="row"> <!-- Site tag row -->
 		<h1 mean-token="'home-default'">SOL :: Search</h1>
 	</div> <!-- End site tag row -->
+	<div>
+  <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
+  <button class='button' ng-click="addAlert()">Add Alert</button>
+</div>
 </section> <!-- End site tag section -->
 
 <section> <!-- Logo section -->

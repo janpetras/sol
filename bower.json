@@ -1,6 +1,6 @@
 {
     "name": "mean",
-    "version": "0.3.3",
+    "version": "latest",
     "dependencies": {
         "angular": "latest",
         "angular-animate": "latest",
@@ -8,7 +8,8 @@
         "angular-cookies": "latest",
         "angular-mocks": "latest",
         "angular-route": "latest",
-        "angular-bootstrap": "0.11.0",
+        "angular-bootstrap": "latest",
+        "foundation": "zurb/bower-foundation",
         "angular-ui-router": "#master"
     }
 }
