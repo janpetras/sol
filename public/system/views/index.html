@@ -1,36 +1,35 @@
-<div class="container-fluid content" data-ng-controller="IndexController"> <!-- Main container and IndexController -->
+<div class="container content" data-ng-controller="IndexController"> <!-- Main container and IndexController -->
 <section> <!-- Site tag section -->
 	<div class="row"> <!-- Site tag row -->
+		<div class="small-12 columns">
 		<h1 mean-token="'home-default'">SOL :: Search</h1>
+		</div>
 	</div> <!-- End site tag row -->
-	<div>
-  <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
-  <button class='button' ng-click="addAlert()">Add Alert</button>
-</div>
 </section> <!-- End site tag section -->
 
 <section> <!-- Logo section -->
 	<div class="row"> <!-- Logo row -->
-		<div class="col-xs-3"></div>
-		<div class="col-xs-6 text-center logo-container"> <!-- Logo column -->
+		<div class="small-10 columns text-center logo-container small-offset-1"> <!-- Logo column -->
 			<a ui-sref="about" title="SOL"><img ng-src="{{logo}}" alt="SOL Logo"></a>
 	</div> <!-- End logo column -->
-		<div class="col-xs-3"></div>
 </div> <!-- End logo row -->
 </section> <!-- End logo section -->
 
 <section> <!-- Search input section -->
 	<div class="row"> <!-- Search row -->
-		<div class="col-xs-2"></div>
-		<div class="col-xs-8"> <!-- Search column -->
-			<div class="input-group"> <!-- Input group -->
-				<input type="text" class="form-control main-search-input">
-				<span class="input-group-btn">
-					<button class="btn btn-default main-search-button" type="button">Search</button>
-				</span>
-		</div><!-- End input group -->
-	</div><!-- End search column -->
-		<div class="col-xs-2"></div>
+		<div class="small-8 columns small-offset-2"> <!-- Search column -->
+			<form>
+				<div class="row collapse"> <!-- Input group -->
+					<div class="large-9 columns">
+						<input type="text" placeholder="" class="form-control main-search-input">
+				</div>
+					<div class="small-3 columns">
+						<a href="#" class="button postfix main-search-button">Search</a>
+				</div>
+			</div>
+		</form>
+	</div><!-- End input group -->
+</div><!-- End search column -->
 </div><!-- End search row -->
 </section> <!-- End search input section -->
 </div> <!-- End IndexController -->

@@ -8,7 +8,6 @@
         "angular-cookies": "latest",
         "angular-mocks": "latest",
         "angular-route": "latest",
-        "angular-bootstrap": "latest",
         "foundation": "zurb/bower-foundation",
         "angular-ui-router": "#master"
     }

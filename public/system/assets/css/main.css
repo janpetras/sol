@@ -22,10 +22,6 @@ body {
   display: inline-block;
 }
 
-.text-edit {
-  padding: 0.8125rem 0 0 0;
-}
-
 .account {
   text-align: right;
 }
@@ -48,16 +44,15 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 1.2rem;
+  height: 2rem;
   width: 100%;
   background: #ded5b3;
-  -webkit-box-shadow: 0 8px 6px 6px black;
-  -moz-box-shadow: 0 8px 6px 6px black;
-  box-shadow: 0 8px 6px 6px black;
+  padding: 0.5rem 0 0.5rem 0;
 }
 
 footer p {
-  padding: 0.3125rem 0 0.75rem 0.625rem;
+  margin: 0;
+  line-height: 1;
 }
 
 .navbar {
@@ -109,6 +104,20 @@ h1 .btn-default:hover, h2 .btn-default:hover, h3 .btn-default:hover, h4 .btn-def
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
+}
+
+@media all and (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+}
+@media all and (min-width: 501px) {
+  .mobile {
+    display: none;
+  }
+}
+.left-off-canvas-menu {
+  height: 1000%;
 }
 
 .main-search-input {
