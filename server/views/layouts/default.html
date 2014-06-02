@@ -3,7 +3,7 @@
 {% include '../includes/head.html' %}
 <body>
 
-	<nav class="top-bar desktop" data-topbar data-ng-include="'/public/system/views/header.html'" data-role="navigation"></nav>
+	<nav class="top-bar desktop" data-topbar data-ng-include="'/public/system/views/header.html'" data-role="navigation" data-ng-controller="HeaderController"></nav>
 	{% if adminEnabled %}
 		<section class="admin-menu">
 			<div data-ng-include="'/mean-admin/views/index.html'"></div>
