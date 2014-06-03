@@ -5,6 +5,7 @@
 .idea/
 node_modules/
 public/system/lib
+!public/system/lib/foundation/scss/foundation/_settings.scss
 mean.iml
 test/coverage/
 modules/public/

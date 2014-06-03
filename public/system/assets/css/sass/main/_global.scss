@@ -118,13 +118,13 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 10px;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 480px) {
 	.desktop {
 		display: none;
 	}
 }
 
-@media all and (min-width: 501px) {
+@media all and (min-width: 481px) {
 	.mobile {
 		display: none;
 	}
