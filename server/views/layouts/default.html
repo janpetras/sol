@@ -4,6 +4,17 @@
 <body>
 
 	<nav class="top-bar desktop" data-topbar data-ng-include="'/public/system/views/header.html'" data-role="navigation" data-ng-controller="HeaderController"></nav>
+	
+	<nav class="menu slide-menu-left">
+    <ul>
+        <li><button class="close-menu">&larr; Close</button></li>
+        <li><a href="#">Broccoli</a></li>
+        <li><a href="#">Tomato</a></li>
+        <li><a href="#">Cucumber</a></li>
+        <li><a href="#">Kale</a></li>
+        <li><a href="#">Celery</a></li>
+    </ul>
+	</nav><!-- /slide menu left -->
 
 	{% if adminEnabled %}
 		<section class="admin-menu">
