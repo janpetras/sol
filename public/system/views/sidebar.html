@@ -1,0 +1,16 @@
+<ul>
+	<li class="name">
+		<h1><a ui-sref="home" mean-token="'site-title'">SOL::S</a></h1>
+</li>
+	<li><button class="close-menu" ng-click="leftySleep();">&larr; Close</button></li>
+	<li data-ng-repeat="item in menus.main" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
+		<a mean-token="item.link" ui-sref='{{item.link}}'>{{item.title}}</a>
+</li>
+	<li data-ng-hide="global.authenticated"><a ui-sref='auth.register'>Register</a></li>
+	<li data-ng-hide="global.authenticated"><a ui-sref='auth.login'>Login</a></li>
+	<li class="text-center">
+		<a href="">{{global.user.name}}</a>
+		<a href="/logout">Logout</a>
+</li>
+
+</ul>
